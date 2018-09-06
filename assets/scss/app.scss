@@ -3,6 +3,7 @@
 
 // Functions
 @import 'functions/rem-calc';
+@import 'functions/mixins';
 
 // Core
 @import 'core/reset';
@@ -18,6 +19,8 @@
 @import 'components/buttons';
 @import 'components/lists';
 @import 'components/tabs';
+@import 'components/headermenu';
+@import 'components/fp-components';
 
 // Templates
-@import 'templates/example';
+@import 'templates/tmf';

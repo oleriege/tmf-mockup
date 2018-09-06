@@ -1,0 +1,59 @@
+#tmf {
+  @include breakpoint($small) {
+    width: 100%;               
+    .logo {
+     > img { width: 150px; 
+    }
+    }  
+    > .container {
+      background-color: white;      
+      height: 100vh;     
+    }
+
+    footer {
+      position: relative;
+      bottom: 0;   
+         
+    }
+    header {
+      border-bottom: 1px solid $dark-green;
+      padding: 10px;
+    }
+    h1 {
+      color: $white-color;
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;      
+    }
+    .logo {
+      width: 50%;
+    }
+  }
+
+  @include breakpoint($medium) {
+    
+  }
+
+  @include breakpoint($large) {
+    .logo {
+      > img { width: 300px; 
+     }
+    
+  }
+}
+
+  @include breakpoint($x-large) {    
+    h1 {
+      color: $grey-color;
+    }
+    header {
+      margin: 0 -15px 0 -15px;
+    }
+    .promo-container {
+      padding: 15px 0;
+    }
+  }
+}
+html,body {
+  background-color: $primary-color;
+}
